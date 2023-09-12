@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+
+<title>Covid Risk Factor Indicator</title>
+<style>
+.button {
+
+    background: #11CDD4;
+
+    background-image: -webkit-linear-gradient(top, #11CDD4, #195ECF);
+
+    background-image: -moz-linear-gradient(top, #11CDD4, #195ECF);
+
+    background-image: -ms-linear-gradient(top, #11CDD4, #195ECF);
+
+    background-image: -o-linear-gradient(top, #11CDD4, #195ECF);
+
+    background-image: -webkit-gradient(to bottom, #11CDD4, #195ECF);
+
+    border-radius: 8px;
+
+    line-height: 0;
+
+    color: #FFFFFF;
+
+    font-family:'Caveat', cursive ;
+
+    width: 108px;
+
+    font-size: 16px;
+
+    margin: 10px;
+
+    padding: 25px;
+
+    border: solid #337FED 0;
+
+    display: inline-block;
+
+    cursor: pointer;
+
+    text-align: center;
+
+ }
+
+ .button:hover {
+
+    background: #30E3CB;
+
+ }
+html
+{ 
+width: 100%; 
+height:100%; 
+overflow:hidden; 
+}
+#invalid-user
+{
+color: red;
+}
+
+
+</style>
+<body>
+<h1 style="font-size: 60px;color: blue;">COVID RISK FACTOR INDICATOR</h1>
+<div class="left1">
+    <h1 style="color : rgb(129, 124, 125);font-size: 40px;">LOGIN</h1>
+    <form action="/login" method="post">
+        <label for="name"><h1 style="color: black;">USERNAME</h1></label>
+        <input type="text" id="name" name="name" maxlength="8" size="60" style="height:20px; width:300px;"><br>
+        <label for="pass"><h1 style="color: black;">PASSWORD</h1></label>
+        <input type="password" id="pass" name="pass" size="30" style="height:20px; width:300px;"><br><br>
+         <button type="submit" class="button">LOGIN</button>
+        <div id="invalid-user"><left>{{msg}}</left></div>
+      </form> 
+</div>
+</body>
+
+</html>
